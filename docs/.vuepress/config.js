@@ -27,36 +27,33 @@ module.exports = {
 				]
 			}
 		],
-		// sidebar: {
-		// 	'/accumulate/': [
-		// 		{
-		// 			title: '前端积累',
-		// 			children: [
-		// 				'/accumulate/1.html',
-		// 				'/accumulate/2.html',
-		// 				'/accumulate/3.html',
-		// 				'/accumulate/4.html',
-		// 				'/accumulate/5.html',
-		// 				'/accumulate/6.html',
-		// 				'/accumulate/7.html',
-		// 				'/accumulate/8.html',
-		// 				'/accumulate/9.html',
-		// 				'/accumulate/10.html',
-		// 				'/accumulate/11.html',
-		// 			]
-		// 		}
-		// 	],
-		// 	'/algorithm/': [
-		// 		'/algorithm/',
-		// 		{
-		// 			title: '第二组侧边栏下拉框的标题1',
-		// 			children: [
-		// 				'/algorithm/'
-		// 			]
-		// 		}
-		// 	]
-		// },
-		sidebar: 'auto', // 侧边栏配置
-		sidebarDepth: 2
+
+		sidebar: {
+			'/accumulate/': [
+				{
+					title: 'AAAAA',
+					children: [
+						'/accumulate/1.html',
+						'/accumulate/2.html',
+						'/accumulate/3.html'
+					]
+				}
+			],
+			'/algorithm/': [
+				'/algorithm/',
+				{
+					title: '第二组侧边栏下拉框的标题1',
+					children: [
+						'/algorithm/'
+					]
+				}
+			]
+		},
+		// sidebar: 'auto', // 侧边栏配置
+		sidebarDepth: 1,
+
+		themeConfig: {
+			lastUpdated: 'Last Updated' // string | boolean
+		}
 	}
 };
